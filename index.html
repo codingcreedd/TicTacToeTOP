@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ttt.js" defer></script>
+</head>
+<body>
+    <section class="enter-name-section" style="display: none;">
+        <div class="input-name">
+            <h1>Enter Name</h1>
+            <input type="text" id="player-name-input">
+            <div class="options">
+                <p class="option" id="x">X</p>
+                <p class="option" id="o">O</p>
+            </div>
+            <button class="player-input-btn">Submit</button>
+        </div>
+    </section>
+
+    <section class="game-finished" style="display: none;">
+        <p></p>
+    </section>
+
+    <main class="game">
+        <section class="score-section">
+            <div class="player-score">
+                <h2 id="player-name"></h2>
+                <p class="score" id="player-score">0</p>
+            </div>
+            <div>
+                <h2 class="ai-name">AI</h2>
+                <p class="score" id="ai-score">0</p>
+            </div>
+        </section>
+    
+        <section class="grid-container">
+            <button id="0" class="cell"></button>
+            <button id="1" class="cell"></button>
+            <button id="2" class="cell"></button>
+            <button id="3" class="cell"></button>
+            <button id="4" class="cell"></button>
+            <button id="5" class="cell"></button>
+            <button id="6" class="cell"></button>
+            <button id="7" class="cell"></button>
+            <button id="8" class="cell"></button>
+        </section>
+    </main>
+</body>
+</html>
